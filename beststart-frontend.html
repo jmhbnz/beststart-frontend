@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Input Page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=11; text/html; charset=UTF-8">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+
+<style>
+
+
+	body {
+    color: #4f4b46;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: fira-sans,sans-serif;
+    font-size: 16px;
+    line-height: 1.625;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+
+	.site-container-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100vh;
+}
+.site-container {
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+.page-header {
+    background-color: #3e4d5d;
+    min-width: 320px;
+    position: relative;
+    z-index: 7;
+}
+
+.entitlements-header-inner h2 {
+    margin-top: 60px;
+}
+
+h2 {
+    font-size: 42px;
+	 box-sizing: inherit;
+}
+
+
+	.entitlements-header .entitlements-header-inner {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+.entitlements-header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    background-image: url(https://smartstart.services.govt.nz/assets/img/header-reverse-curve.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+}
+/*@media only screen and (min-width:992px)*/
+.entitlements-header .entitlements-header-inner {
+    margin-top: 40px;
+    padding-right: 320px;
+    min-height: 350px;
+    background-image: url(https://smartstart.services.govt.nz/assets/img/illustrations/financial-help-header.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+
+.entitlements-header {
+    background-color: #d1e8e5;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 40px;
+}
+h2, h3 {
+    font-family: fira-sans,sans-serif;
+    line-height: 1.2;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.plain-layout-page {
+    overflow: hidden;
+}
+
+.entitlements-results .entitlement-result {
+    position: relative;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #9ea6ae;
+}
+
+
+.entitlements-page .section-heading {
+    color: #3e7ab1;
+    border-left: 4px solid #3e7ab1;
+    padding-left: 21px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.plain-layout-page .page-content {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+/*@media only screen and (min-width:992px)*/
+.entitlements-results .award-up-to {
+    position: absolute;
+    top: -14px;
+    right: 0px;
+}
+
+
+/*@media only screen and (min-width:992px)*/
+.entitlements-header .entitlements-header-inner h2 {
+    margin-top: 60px;
+}
+
+/*@media only screen and (min-width:992px)*/
+.entitlements-results .entitlement-result {
+    padding-bottom: 45px;
+    margin-bottom: 45px;
+    padding-right: 200px;
+}
+
+
+.entitlements-results .award-up-to .value {
+    font-size: 30px;
+    font-weight: 700;
+}
+.entitlements-results .award-up-to .description {
+    font-weight: 700;
+}
+/*@media only screen and (min-width:992px)*/
+.entitlements-results .award-up-to .frequency {
+    display: block;
+    text-align: right;
+    position: relative;
+    top: -7px;
+}
+
+.button {
+    background-color: #487f80;
+    border-color: #487f80;
+    border-radius: 5px;
+    color: #fff;
+    margin: 10px;
+    min-width: auto;
+    font-size: 18px;
+    padding: 6px 20px;
+    line-height: 26px;
+}
+
+
+
+
+</style>
+</head>
+  <body>
+  <div class="site-container-wrapper"><div class="site-container">
+  
+  <div class="entitlements-header"><div class="entitlements-header-inner"><h2>
+  <!-- react-text: 39 -->Tirohia ngā āwhina ā-pūtea ka taea<!-- /react-text --><br>
+  <span class="english">See what financial help is available</span></h2></div></div>
+  
+  <div class="plain-layout-page full-width entitlements-page" id="content">
+  <div class="page-content">
+  
+ 
+
+  
+
+  <!-- QUESTIONAIRE SOLUTION -->
+  
+  <fieldset><legend><span><!-- react-text: 171 -->Do you have a partner?<!-- /react-text --><span class="visuallyhidden"> (required)</span></span></legend><div class="radio-group "><div><div><label><input type="radio" name="applicant.relationshipStatus-group" value="notsingle" aria-describedby="entitlements-applicant.relationshipStatus-desc"><span>Yes</span></label><label><input type="radio" name="applicant.relationshipStatus-group" value="single" aria-describedby="entitlements-applicant.relationshipStatus-desc"><span>No</span></label></div><div id="entitlements-applicant.relationshipStatus-desc"><div></div><div></div></div></div></div></fieldset>
+  
+  
+
+<div class="section">
+    <div class="section-inner">
+	  <!-- <form> -->
+	
+        <h3 class="section-heading">
+            <!-- react-text: 278 -->Whiwhinga Moni
+            <!-- /react-text --><br><span class="english">Income</span></h3>
+        <div class="input-group "><label for="entitlements-income.applicant"><span><span><!-- react-text: 285 -->What’s your current gross income?<!-- /react-text --><span class="visuallyhidden"> Enter a dollar amount and then select how frequently you recieve that amount.</span></span><span class="visuallyhidden"> (required)</span></span></label>
+            <div>
+                <fieldset><strong>$</strong><input type="number" id="entitlements-income.applicant" value="500" aria-describedby="entitlements-income.applicant-desc" class="currency-input"><span class="styled-select"><select id="entitlements-income.applicant-frequency" aria-label="Select income frequency (required)"><option value="weekly">weekly</option><option value="fortnightly">2-weekly</option><option value="monthly">monthly</option><option value="annually">yearly</option></select></span></fieldset>
+                <div id="entitlements-income.applicant-desc">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="expandable-group secondary">
+            <div class="expandable "><a href="#" class="expandable-title-wrapper" aria-controls="35b5542f-0d28-48d1-80b9-c57f0a7e1090" aria-expanded="false"><span class="expandable-title"><!-- react-text: 305 -->What is my gross income and where do I find it?<!-- /react-text --><span class="visuallyhidden"><!-- react-text: 307 --> - <!-- /react-text --><!-- react-text: 308 -->expand<!-- /react-text --><!-- react-text: 309 --> this content<!-- /react-text --></span></span></a>
+                <div id="35b5542f-0d28-48d1-80b9-c57f0a7e1090" class="content" aria-hidden="true">
+                    <p>Your gross income is the amount of money you earn before anything is taken out for taxes or other deductions.</p>
+                    <p>This includes money from salary, wages, benefits, pensions, interests or dividends.</p>
+                    <p>You might find this: </p>
+                    <ul>
+                        <li>on your payslip from your employer</li>
+                        <li>through MyIR</li>
+                        <li>directly from your employer.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="input-group "><label for="entitlements-income.spouse"><span><span><!-- react-text: 692 -->What’s your partner’s current gross income?<!-- /react-text --><span class="visuallyhidden"> Enter a dollar amount and then select how frequently they recieve that amount.</span></span><span class="visuallyhidden"> (required)</span></span></label>
+            <div>
+                <fieldset><strong>$</strong><input type="number" id="entitlements-income.spouse" value="" aria-describedby="entitlements-income.spouse-desc" class="currency-input"><span class="styled-select"><select id="entitlements-income.spouse-frequency" aria-label="Select income frequency (required)"><option value="weekly">weekly</option><option value="fortnightly">2-weekly</option><option value="monthly">monthly</option><option value="annually">yearly</option></select></span></fieldset>
+                <div id="entitlements-income.spouse-desc">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+		
+	   <!-- Child Group -->	
+		<div class="section">
+    <div class="section-inner">
+        <h3 class="section-heading">
+            <!-- react-text: 188 -->Ko āu tamariki
+            <!-- /react-text --><br><span class="english">Your children</span></h3>
+
+        <!-- PPL INFO -->	
+		  <fieldset><legend><span><!-- react-text: 171 -->Are you currently receiving or be applying for Paid Parental Leave?<!-- /react-text --><span class="visuallyhidden"> (required)</span></span></legend><div class="radio-group "><div><div><label><input type="radio" name="applicant.relationshipStatus-group" value="notsingle" aria-describedby="entitlements-applicant.relationshipStatus-desc"><span>Yes</span></label><label><input type="radio" name="applicant.relationshipStatus-group" value="single" aria-describedby="entitlements-applicant.relationshipStatus-desc"><span>No</span></label></div><div id="entitlements-applicant.relationshipStatus-desc"><div></div><div></div></div></div></div></fieldset>
+		  
+		        <div class="input-group "><label for="entitlements-ppl.end"><span><span><!-- react-text: 692 -->What’s your expected Paid Parental Leave End date?<!-- /react-text --><span class="visuallyhidden"> </span></span><span class="visuallyhidden"> (required)</span></span></label>
+            <div>
+                <fieldset><strong>$</strong><input type="number" id="entitlements-income.spouse" value="" aria-describedby="entitlements-income.spouse-desc" class="currency-input"></fieldset>
+                <div id="entitlements-ppl.end-desc">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+		  
+		  
+		  $.ajax({
+                type: 'POST',
+                contentType: 'application/json',
+                // url: rootURL,
+                url: "http://xxxxxxxxx.xxxxx/api/det",
+                dataType: "json",
+                //data: formToJSON(),
+                data: '{"name":"tom","last":"test","email":"test@west.coast.com","password":"xyz"}',
+                success: function(data, textStatus, jqXHR){
+                        alert('Welcome');
+                },
+                error: function(jqXHR, textStatus, errorThrown){
+                        console.log(' Error: ' + errorThrown);
+                }
+        });
+	  
+	  
+	  
+        <div class="component-grouping">
+            <fieldset>
+                <legend><span><!-- react-text: 453 -->Please select the age groups for all your children<!-- /react-text --><span class="visuallyhidden"> (required)</span></span>
+                </legend>
+                <div class="instruction-text">You can select more than one.</div>
+                <div class="checkbox-group ">
+                    <div>
+					   <div class="cust_tableRow">
+						<table class="eachElementHeader" id="AF_DebtCalulatorHeader">
+						<thead>
+						<tr>
+							<th>Details</th>
+							<th>Date of Birth</th>			
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Child 1</td>
+							<td><input id='ChildDate1' class='DC_Period' onchange='validDate(value);' type='text' value=''></td>			
+						</tr>
+						<tr>
+							<td>Child 2</td>
+							<td><input id='ChildDate2' class='DC_Period' onchange='validDate(value);' type='text' value=''></td>			
+						</tr>
+						<tr>
+							<td>Child 3</td>
+							<td><input id='ChildDate3' class='DC_Period' onchange='validDate(value);' type='text' value=''></td>			
+						</tr>
+						
+						</tbody>
+					</table>
+					</div>
+					
+					<!--
+                        <div class="checkboxes"><label><input type="checkbox" name="children.ages[0]" value="0" aria-describedby="entitlements-children.ages-desc"><span>under 1 year</span></label><label><input type="checkbox" name="children.ages[1]" value="4" aria-describedby="entitlements-children.ages-desc"><span>1 to 4 years</span></label><label><input type="checkbox" name="children.ages[2]" value="13" aria-describedby="entitlements-children.ages-desc"><span>5 to 13 years</span></label><label><input type="checkbox" name="children.ages[3]" value="15" aria-describedby="entitlements-children.ages-desc"><span>14 to 15 years</span></label><label><input type="checkbox" name="children.ages[4]" value="18" aria-describedby="entitlements-children.ages-desc"><span>16 to 18 years</span></label></div>
+                      -->
+
+					  <div id="entitlements-children.ages-desc">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+
+        </div>
+    </div>
+</div>
+   <!-- END of Child Group type="submit"
+   <button class="button" onclick="sendRequest();">Submit my answers</button> -->
+<div class="form-actions">
+
+</div>
+
+</form>
+  <button class="button" onclick="sendRequest();">Submit my answers</button>
+    </div>
+</div>
+  
+	<!-- ########## NEW INFORMATION - BEST START ########## -->
+
+	
+	
+	
+	
+	
+
+  
+  
+  
+  
+  
+
+  </div>
+  
+  </div>
+  
+  
+  
+  </div></div>
+   <div id="bestStart">
+   
+   </div>
+   <div id="app"></div>
+   
+    
+	
+  <script type="text/javascript">
+  function convertToJSONDate(strDate){
+  var splitted = strDate.split("/");
+  var dt = new Date(splitted[2],splitted[0],splitted[1]);
+  var newDate = new Date(Date.UTC(dt.getFullYear(), dt.getMonth(), dt.getDate(), dt.getHours(), dt.getMinutes(), dt.getSeconds(), dt.getMilliseconds()));
+  return newDate.getFullYear() + '-' + pad(newDate.getMonth(), 2, 0) + '-' + pad(newDate.getDate(), 2, 0);
+}
+
+function pad(n, width, z) {
+  z = z || '0';
+  n = n + '';
+  return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+}
+	function CreateJSONRequest() {
+		
+		var JSON  = '{';
+
+			// ADD PERSONS TO THE JSON REQUEST
+		        JSON += '"persons" : {';
+			    JSON += '"pcg" : {';
+			        JSON += '"birth" : { "2018-05" : "1990-04-01" },';
+			        JSON += '"age"   : { "2018-05" : null },';
+				JSON += '"income_as_per_income_tax"   : { "2018" : ' + document.getElementById("entitlements-income.applicant").value + ' }';
+		            JSON += '}'
+		
+			// IF A PARTNERS INCOME HAS BEEN ENTERED THEN ADD TO JSON REQUEST
+			if (document.getElementById("entitlements-income.spouse").value.length > 0) {
+			    JSON += '"partner" : {';
+			        JSON += '"birth" : { "2018-05" : "1990-04-01" },';
+			        JSON += '"age"   : { "2018-05" : null },';
+				JSON += '"income_as_per_income_tax"   : { "2018" : ' + document.getElementById("entitlements-income.applicant").value + ' }';
+		            JSON += '}'
+			}
+
+			// IF CHILD 1 HAS BEEN ENTERED THEN ADD THEM TO THE JSON REQUEST
+			if (document.getElementById("ChildDate1").value.length > 0) {
+			    JSON += ',"child1" : {';
+			        JSON += '"birth" : { "2018-05" : "' + convertToJSONDate(document.getElementById("ChildDate1").value) + '" },';
+			        JSON += '"age"   : { "2018-05" : null },';
+				JSON += '"income_as_per_income_tax"   : { "2018" : 0 }';
+		            JSON += '}'
+			}
+			
+			// IF CHILD 2 HAS BEEN ENTERED THEN ADD THEM TO THE JSON REQUEST
+			if (document.getElementById("ChildDate2").value.length > 0) {
+			    JSON += ',"child2" : {';
+			        JSON += '"birth" : { "2018-05" : "' + convertToJSONDate(document.getElementById("ChildDate2").value) + '" },';
+			        JSON += '"age"   : { "2018-05" : null },';
+				JSON += '"income_as_per_income_tax"   : { "2018" : 0 }';
+		            JSON += '}'
+			}
+
+			// IF CHILD 2 HAS BEEN ENTERED THEN ADD THEM TO THE JSON REQUEST
+			if (document.getElementById("ChildDate3").value.length > 0) {
+			    JSON += ',"child3" : {';
+			        JSON += '"birth" : { "2018-05" : "' + convertToJSONDate(document.getElementById("ChildDate3").value) + '" },';
+			        JSON += '"age"   : { "2018-05" : null },';
+				JSON += '"income_as_per_income_tax"   : { "2018" : 0 }';
+		            JSON += '}'
+			}
+		    JSON += '}';
+		
+		    // ADD PROPERTIES TO JSON REQUEST
+		    JSON += ', "titled_properties" : {';
+			    JSON += '"house" : {';
+			        JSON += '"owners" : [ "pcg" ';
+				if (document.getElementById("entitlements-income.spouse").value.length > 0) { JSON += ', "partner"'; } 
+				if (document.getElementById("ChildDate1").value.length > 0) { JSON += ', "child1"'; } 
+				if (document.getElementById("ChildDate2").value.length > 0) { JSON += ', "child2"'; } 
+				if (document.getElementById("ChildDate3").value.length > 0) { JSON += ', "child3"'; } 
+		            JSON += ']}'
+		    JSON += '}';
+
+		    // ADD FAMILY TO JSON
+		    JSON += ', "families" : {';
+			    JSON += '"fambam" : {';
+			        JSON += '"principal_caregivers" : [ "pcg" ] ';
+				if (document.getElementById("entitlements-income.spouse").value.length > 0) { JSON += '"partners" : [ "partner" ] '; }
+				if (document.getElementById("ChildDate1").value.length > 0) { JSON += ', "dependant_children" : [ "child1" ] '; } 
+				if (document.getElementById("ChildDate2").value.length > 0) { JSON += ', "dependant_children" : [ "child2" ] '; } 
+				if (document.getElementById("ChildDate3").value.length > 0) { JSON += ', "dependant_children" : [ "child3" ] '; } 
+			    JSON += ', "entitlement_for_best_start_tax_credit" : { "2018-07" : null }';
+		    JSON += '}}';
+
+		JSON += '}';
+
+	    return JSON;
+	}
+
+	function sendRequest() {
+
+	$.ajax({
+                type: 'POST',
+                contentType: 'application/json',
+                // url: rootURL,
+                url: "http://103.197.61.130:2300/calculate",
+                dataType: "json",
+                //data: formToJSON(),
+                data: CreateJSONRequest() ,
+                success: function(data, textStatus, jqXHR){
+                        alert(jqXHR.responseText);
+                },
+                error: function(jqXHR, textStatus, errorThrown){
+                        console.log(' Error: ' + errorThrown);
+                }
+        });
+	}
+
+   function newRowFortable(movement, thisElement, getValues, indexValue) {
+   if (!indexValue) {
+                var parentTR = $(thisElement).parent("td").parent("tr");
+                indexValue = parentTR.index();
+            }
+			
+   }
+      /*===== [ APPLY DATE PICKER TO NEW ROWS ] =====*/
+        function applyDefaultEvents() {
+            $(".DC_Period").datepicker({
+                dateFormat: 'dd/mm/yy'
+            });
+            $(".addToolTip").tooltip();
+            //countTotalBalance();
+        }
+		applyDefaultEvents();
+   /*===== [ DATE VALIDATION ] =====*/
+        function validDate(input, output) {
+            var invalidR = " * Please enter a valid date - 'DD/MM/YYYY' format required";
+            if (!output) {
+                output = "alert";
+            }
+            var dateFormat = /\d{2}[/]\d{2}[/]\d{4}/;
+            var result = true;
+            var outputTxt = " ";
+            if (!dateFormat.test(input) && input != "") {
+                result = false;
+                outputTxt = invalidR;
+            }
+            if (output == "alert") {
+                if (!result) {
+                    alert(outputTxt)
+                };
+            } else {
+                return result;
+            }
+        } 
+		
+		function submit() {
+		 var getPcgAmount = $("#entitlements-income.applicant").val();
+		 var getPtrAmount = $("#entitlements-income.spouse").val();
+		 alert(getPtrAmount);
+		}
+
+  </script>
+  
+  </body>
+</html>
