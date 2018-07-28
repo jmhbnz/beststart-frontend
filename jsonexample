@@ -1,0 +1,33 @@
+{
+  "persons" : {
+        "Bob the builder": {
+          
+          "birth" : { "2018-05" : "1990-04-01"},
+          "social_security__received_income_tested_benefit" : {"2018" : false },
+          "veterans_support__received_parents_allowance" : { "2018" : false },
+          "veterans_support__received_childrens_pension" : { "2018" : false },
+          "age" : { "2018-05" : null },
+          "income_tax__income" : { "2018" : 50000 },
+          "income_tax__dependant" : { "2018-04" : null },
+          "income_tax__eligible_for_working_for_families" : { "2018" : null }
+          
+        }
+  },
+
+  "titled_properties": { 
+    
+      "Bob's house": { 
+
+      "owners": [ "Bob the builder" ] 
+    } 
+  },
+  
+  "families" : { 
+    
+    "Test fam" : { 
+  
+      "principal_caregivers" : ["Bob the builder" ],
+      "income_tax__entitlement_for_best_start_tax_credit" : { "2018-05" : null }
+    }
+  }
+}
